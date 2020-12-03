@@ -8,7 +8,7 @@ const prefix = '-';
 
 client.once('ready', () => {
     console.log('mayobot is online');
-    client.user.setActivity('Sta lavorando...')
+    client.user.setActivity('working..')
 });
 
 client.on('message', message =>{
@@ -17,22 +17,13 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase();
 
-    if(command === 'ciao.'){
-        message.channel.send('Ciao!');
-    } else if (command == 'youtube'){
-        message.channel.send('https://www.youtube.com/channel/UCxxZCgdTVnqYFoCDcdLHBow/videos')
+    if(command === 'hello'){
+        message.channel.send('hello');
     }else if(command === 'whoami'){
 const embed = new Discord.MessageEmbed()
 .setTitle(message.author.username)
 .setThumbnail(message.author.avatarURL())
-.setDescription('entrato nel')
-.addFields({
-    name: 'sei entrato nel',
-    value: Discord.GuildMember.joinedAt()
-}, {
-    name: message.author.avatar,
-    value: 'test'
-    })
+.setDescription('you are in: ' +Discord.Guild.name())
         message.channel.send(embed)    
 }});
 
@@ -148,4 +139,4 @@ const embed = new Discord.MessageEmbed()
 
 
 
-client.login('get your own token...');
+client.login('better luck next time');
