@@ -10,7 +10,7 @@ const randommayo = 'random mayo'
 
 client.once('ready', () => {
     console.log('mayobot is online');
-    client.user.setActivity('working..')
+    client.user.setActivity('working | -help')
 });
 
 client.on('message', message =>{
@@ -54,6 +54,16 @@ const mayo6 = new Discord.MessageEmbed()
         const numbers = [mayo1,mayo2,mayo3,mayo4,mayo5,mayo6];
 let randNum = numbers[Math.floor(Math.random() * numbers.length)];
 message.channel.send(randNum)
+    }else if(command === 'help'){
+    const help = new Discord.MessageEmbed()
+    .setAuthor('Help:')
+    .setTitle('These are the bot commands.')
+    .addField('`-hello`', 'just says hello back')
+    .addField('`-whoami`', 'says who you are')
+    .addField('`-randommayo`', 'gives you random mayo')
+    .setColor('#0000FF')
+    .setThumbnail('https://cdn.discordapp.com/avatars/783820096236945428/f83f61db71934560d73d4b27f430c983.png?size=128')
+message.channel.send(help)
     }});
 
 
@@ -168,4 +178,4 @@ message.channel.send(randNum)
 
 
 
-client.login('nice try');
+client.login('what are you doing down here! get up there!');
