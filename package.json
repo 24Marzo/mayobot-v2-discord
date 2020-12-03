@@ -1,0 +1,14 @@
+{
+  "name": "mayobot-v2",
+  "version": "1.0.0",
+  "description": "bot cool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "24Marzo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
