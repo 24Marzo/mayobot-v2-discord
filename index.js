@@ -66,7 +66,16 @@ message.channel.send(randNum)
 message.channel.send(help)
     }else if(command === 'cum'){
         message.channel.send(moments[Math.floor(Math.random() * moments.length)])}
+else if(command === 'music') {
+var voiceChannel = message.member.voice.channel;
+voiceChannel.join().then(connection => play(connection)).catch(err => console.log(err));
+}
 });
+
+function play(connection) {
+let dispatcher = connection.play('./music.mp3')
+dispatcher.on("end", end => play(connection));
+}
 
 
 
