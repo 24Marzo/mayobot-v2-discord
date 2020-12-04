@@ -6,7 +6,7 @@ const prefix = '-';
 
 const randommayo = 'random mayo'
 
-
+let moments = ['https://cdn.discordapp.com/attachments/717392723388137482/784182239432146964/Screenshot_2020-12-03-22-48-45-703_com.mxtech.videoplayer.ad.jpg', 'https://cdn.discordapp.com/attachments/717392723388137482/784182239734005810/Screenshot_2020-12-03-22-27-54-193_com.mxtech.videoplayer.ad.jpg',  'https://cdn.discordapp.com/attachments/717392723388137482/784182241017331732/Screenshot_2020-12-02-23-43-46-964_com.mxtech.videoplayer.ad.jpg', 'https://cdn.discordapp.com/attachments/717392723388137482/784182241273839626/Screenshot_2020-12-02-23-42-36-112_com.mxtech.videoplayer.ad.jpg', 'https://cdn.discordapp.com/attachments/717392723388137482/784182241864712222/Screenshot_2020-12-02-23-29-21-599_com.mxtech.videoplayer.ad.jpg', 'https://cdn.discordapp.com/attachments/717392723388137482/784182242346926080/Screenshot_2020-12-02-23-15-27-364_com.opera.browser.jpg', 'https://cdn.discordapp.com/attachments/717392723388137482/784182242678800422/Screenshot_2020-12-02-23-13-47-192_com.opera.browser.jpg']
 
 client.once('ready', () => {
     console.log('mayobot is online');
