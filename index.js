@@ -64,7 +64,8 @@ message.channel.send(randNum)
     .setColor('#0000FF')
     .setThumbnail('https://cdn.discordapp.com/avatars/783820096236945428/f83f61db71934560d73d4b27f430c983.png?size=128')
 message.channel.send(help)
-    }
+    }else if(command === 'cum'){
+        message.channel.send(moments[Math.floor(Math.random() * moments.length)])}
 });
 
 
